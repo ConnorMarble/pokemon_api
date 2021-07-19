@@ -1,0 +1,8 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: rgb(48, 47, 47);
+  height: 100%;
+  min-height: 100vh;
+}
