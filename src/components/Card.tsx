@@ -1,13 +1,9 @@
-import { useEffect } from "react";
 import typeColors from "../helpers/typeColors";
 import { IDetails, IObjectKeys } from "../interface";
 
 interface IProps extends IDetails {}
 
 const Card = (props: IProps) => {
-  useEffect(() => {
-    console.log(props);
-  }, [props]);
   return (
     <div className="card">
       <div className="card__image">

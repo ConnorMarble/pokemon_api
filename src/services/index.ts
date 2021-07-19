@@ -1,8 +1,8 @@
 import axios from "axios";
 import { IPokemon, IDetails } from "../interface";
 
-export async function getAllPokemon() {
-  const list = await axios.get("https://pokeapi.co/api/v2/pokemon");
+export async function getAllPokemon(url: string) {
+  const list = await axios.get(url);
   const pokemon: IPokemon[] = list.data.results;
   return pokemon;
 }
